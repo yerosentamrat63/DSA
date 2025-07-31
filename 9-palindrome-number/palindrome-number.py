@@ -16,4 +16,4 @@ class Solution:
             n = n * 10 + p % 10
             p //= 10
 
-        return True if n == ini_x else False
+        return n == ini_x
