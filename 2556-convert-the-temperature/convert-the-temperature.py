@@ -4,3 +4,8 @@ class Solution:
         f = celsius * 1.80 + 32.00
         ans = [k,f]
         return ans
+
+"""
+Time complexity: O(1)
+Space complexity: O(1)
+"""
