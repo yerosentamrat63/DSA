@@ -6,3 +6,8 @@ class Solution:
                 return True
             dict.add(n)
         return False
+
+"""
+Time complexity: O(n)
+Space complexity: O(n)
+"""
