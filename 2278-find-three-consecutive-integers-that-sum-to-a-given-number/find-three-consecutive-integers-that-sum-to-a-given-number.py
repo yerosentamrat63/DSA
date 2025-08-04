@@ -5,3 +5,8 @@ class Solution:
             return [x - 1, x, x + 1]
         else:
             return []
+
+"""
+Time complexity: O(1)
+Space complexity: O(1)
+"""
