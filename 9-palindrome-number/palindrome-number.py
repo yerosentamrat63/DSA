@@ -16,4 +16,9 @@ class Solution:
             n = n * 10 + p % 10
             p //= 10
 
-        return n == ini_x
+        return n == ini_x 
+
+"""
+Space: O(1) because we only use a fixed number of variables.
+Time: O(log(x)) because we divide x by 10 in each step.
+"""
