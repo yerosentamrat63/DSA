@@ -6,3 +6,6 @@ class Solution:
                 newNums.append((nums[i] + nums[i+1]) % 10)
             nums = newNums
         return nums[0]
+
+    #time = O(n^2)
+    #space = O(n)
