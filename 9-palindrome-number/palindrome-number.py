@@ -1,24 +1,13 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
-        """
-        #  converting to str
-
-        num = str(x)
-        return True if num == num[::-1] else False
-        
-        """
-        if x < 0:
+        if x < 0 or (x % 10 == 0 and x != 0):
             return False
-        ini_x = x
-        p = x
-        n = 0
-        while p != 0:
-            n = n * 10 + p % 10
-            p //= 10
-
-        return n == ini_x 
-
-"""
-Space: O(1) because we only use a fixed number of variables.
-Time: O(log(x)) because we divide x by 10 in each step.
-"""
+        temp = x
+        rev = 0
+        while temp:
+            rev = rev * 10 + (temp % 10)
+            temp //= 10
+        if rev == x:
+            return True
+        else:
+            return False 
