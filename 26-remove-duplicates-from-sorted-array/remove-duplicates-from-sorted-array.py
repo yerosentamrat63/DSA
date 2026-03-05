@@ -1,26 +1,16 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        i = 1
-        while i < len(nums):
-            if nums[i] == nums[i - 1]:
-                nums.pop(i)
-            else:
-                i += 1 
-        return len(nums)
-#===============> O(n²)
-
-
-"""
-class Solution:
-    def removeDuplicates(self, nums: List[int]) -> int:
-        if not nums:
+        n = len(nums)
+        if n == 0:
             return 0
 
-        i = 0 
-        for j in range(1, len(nums)):
-            if nums[j] != nums[i]:
-                i += 1
-                nums[i] = nums[j]
-        return i + 1
-"""
-#=================>O(n)
+        holder = 0
+        seeker = 1
+
+        while seeker < n:
+            if nums[holder] != nums[seeker]:
+                holder += 1
+                nums[holder] = nums[seeker]
+            seeker += 1
+
+        return holder + 1
