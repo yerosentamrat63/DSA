@@ -1,0 +1,13 @@
+class Solution:
+    def appendCharacters(self, s: str, t: str) -> int:
+        holder= 0
+        seeker = 0
+        while holder < len(t) and seeker < len(s):
+            if t[holder] == s[seeker]:
+                holder += 1
+                seeker += 1
+            else:
+                seeker += 1
+        print(holder)
+        print(seeker)
+        return len(t) - holder
