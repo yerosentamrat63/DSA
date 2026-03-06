@@ -8,6 +8,6 @@ class Solution:
                 seeker += 1
             else:
                 seeker += 1
-        print(holder)
-        print(seeker)
+        # print(holder)
+        # print(seeker)
         return len(t) - holder
