@@ -3,8 +3,8 @@ class Solution:
         n = len(nums)
         left = 0
 
-        for r in range(n):
-            if nums[r] != val:
-                nums[left], nums[r] = nums[r], nums[left]
+        for right in range(n):
+            if nums[right] != val:
+                nums[left], nums[right] = nums[right], nums[left]
                 left += 1
         return left
